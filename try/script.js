@@ -10,7 +10,16 @@ function verifyRecord() {
             var filteredRecords = data.filter(record => record.registrationNumber === registrationNumber);
             if (filteredRecords.length > 0) {
                 // If records are found, display them
-                document.getElementById('verificationResult').innerHTML = '<strong>Records found:</strong><br>' + JSON.stringify(filteredRecords, null, 2);
+                var resultDiv = document.getElementById('verificationResult');
+                resultDiv.innerHTML = '<strong>Records found:</strong><br>';
+                filteredRecords.forEach(record => {
+                    var recordDiv = document.createElement('div');
+                    recordDiv.innerHTML = `<strong>Registration Number:</strong> ${record.registrationNumber}<br>
+                                           <strong>Name:</strong> ${record.name}<br>
+                                           <strong>Age:</strong> ${record.age}<br>
+                                           <strong>Email:</strong> ${record.email}<br><br>`;
+                    resultDiv.appendChild(recordDiv);
+                });
             } else {
                 document.getElementById('verificationResult').innerText = 'Record not found.';
             }
