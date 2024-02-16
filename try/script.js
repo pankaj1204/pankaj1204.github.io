@@ -3,7 +3,7 @@ function verifyRecord() {
 
     // Make a request to your API or fetch data directly from a JSON file
     // For simplicity, let's assume we have a JSON file named records.json
-    fetch('C:\\Users\\AGARWAL\\IdeaProjects\\NEXACODE\\.idearecords.json')
+    fetch('https://github.com/pankajtries/pankajtries.github.io/tree/main/try/records.json')
         .then(response => response.json())
         .then(data => {
             // Check if the registration number exists in the records
