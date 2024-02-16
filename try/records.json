@@ -1,0 +1,15 @@
+[
+  {
+    "registrationNumber": "ABC123",
+    "name": "John Doe",
+    "age": 25,
+    "email": "john@example.com"
+  },
+  {
+    "registrationNumber": "XYZ789",
+    "name": "Jane Smith",
+    "age": 30,
+    "email": "jane@example.com"
+  },
+  // More records...
+]
