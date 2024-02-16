@@ -6,10 +6,11 @@ function verifyRecord() {
     fetch('records.json')
         .then(response => response.json())
         .then(data => {
-            // Check if the registration number exists in the records
-            var found = data.some(record => record.registrationNumber === registrationNumber);
-            if (found) {
-                document.getElementById('verificationResult').innerText = 'Record found!';
+            // Filter the records based on the entered registration number
+            var filteredRecords = data.filter(record => record.registrationNumber === registrationNumber);
+            if (filteredRecords.length > 0) {
+                // If records are found, display them
+                document.getElementById('verificationResult').innerHTML = '<strong>Records found:</strong><br>' + JSON.stringify(filteredRecords, null, 2);
             } else {
                 document.getElementById('verificationResult').innerText = 'Record not found.';
             }
