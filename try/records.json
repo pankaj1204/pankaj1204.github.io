@@ -10,6 +10,5 @@
     "name": "Jane Smith",
     "age": 30,
     "email": "jane@example.com"
-  },
-  // More records...
+  }
 ]
