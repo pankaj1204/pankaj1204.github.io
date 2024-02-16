@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record Verification</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record Verification</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
+  <div class="container">
     <h1>Record Verification</h1>
     <input type="text" id="registrationNumber" placeholder="Enter Registration Number">
     <button onclick="verifyRecord()">Verify</button>
-    <p id="verificationResult"></p>
-</div>
-<script src="script.js"></script>
+    <div id="recordsContainer"> <!-- This div wraps the verificationResult div -->
+      <div id="verificationResult"></div> <!-- The div to display fetched records -->
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
