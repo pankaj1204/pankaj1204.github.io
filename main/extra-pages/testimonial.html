@@ -1,0 +1,197 @@
+---
+layout: default
+description: Techverse is a technical club in Pune. We are a group of tech enthusiasts who are passionate about technology and its applications.
+title: Testimonials | Techverse
+---
+<!-- include header -->
+{% include navbar.html %}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center">
+        <h1 class="display-4 text-white animated slideInDown mb-4">Testimonials</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                <li class="breadcrumb-item text-primary active" aria-current="page">Testimonial</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- testimonial form -->
+<!-- Form Start -->
+<div class="container-xxl courses my-6 p-1" id="testimonialForm">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8 my-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div id="form_container" class="bg-primary text-center p-5">
+                    <h1 class="mb-2">Give Us Your Feedback</h1>
+                    <h6 class="mb-4">We May Publish this data On Our Website.</h6>
+                    <form id="club_reg_form" method="post">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input type="text" name="name" class="form-control border-0" id="name"
+                                        placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input type="text" name="profession" class="form-control border-0" id="profession"
+                                        placeholder="Your Profession" required>
+                                    <label for="profession">Your Profession</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="email" name="email" class="form-control border-0" id="email"
+                                        placeholder="email@example.com">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="review" id="review" cols="30" rows="10"
+                                        class="form-control border-0" placeholder="Your Review" style="height: 150px;"
+                                        required></textarea>
+                                    <label for="review">Your Review</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form">
+                                    <label for="formFile" class="form-label text-start text-white">Upload Your Profile
+                                        Picture (Keep it Small in Size)</label>
+                                    <input type="file" name="profile_pic" class="form-control" id="profile_pic">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-dark w-100 py-3" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h4 id="error_msg" class="p-2 text-white text-xxl-center"></h4>
+                </div>
+                <div id="form_success" style="display: none;" class="bg-primary text-center p-5">
+                    <div class="container-xxl py-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="container text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <i class="fa fa-check-circle display-1 text-success"></i>
+                                    <h2 class="mb-1">Submitted Testimonial Successfully </h2>
+                                    <h3 class="mb-1">Thank You!</h3>
+                                    <p class="text-white">We appreciate your testimonial submission on our website. We
+                                        will let you know the status of your publication after our review.</p>
+                                    <p class="mb-4 text-white">We will never share your contact Details such as Email.
+                                    </p>
+                                    <a class="btn btn-primary py-3 px-5" href="/">Go Back To Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form End -->
+<!-- Testimonial Start -->
+<div class="container-xxl py-6">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
+            <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-1.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                            lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        </p>
+                        <hr class="w-25 mx-auto">
+                        <h5>Client Name</h5>
+                        <span>Profession</span>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-2.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                            lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        </p>
+                        <hr class="w-25 mx-auto">
+                        <h5>Client Name</h5>
+                        <span>Profession</span>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-3.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                            lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        </p>
+                        <hr class="w-25 mx-auto">
+                        <h5>Client Name</h5>
+                        <span>Profession</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+<!-- JS -->
+<script type="module">
+    import { backend_url, setLoading, offLoading } from '/js/script.js';
+    function handleEventRegSuccess(data) {
+        offLoading();
+        document.getElementById('form_container').style.display = "none";
+        document.getElementById('form_success').style.display = "block";
+    }
+    function handleEventRegError(error) {
+        offLoading();
+        if (error.status_code == 400) {
+            document.getElementById('error_msg').innerHTML = "Please Check Your Details And Try Again";
+            return;
+        } else if (error.status_code == 409) {
+            document.getElementById('error_msg').innerHTML = "You Are Already Registered";
+            return;
+        } else {
+            document.getElementById('error_msg').innerHTML = "Something Went Wrong Please Try Again Later";
+            return;
+        }
+    }
+    window.onload = function () {
+        offLoading();
+    }
+    document.getElementById('club_reg_form').addEventListener('submit', function (e) {
+        setLoading("Registering For Club");
+        e.preventDefault();
+        var url = backend_url + "/api/join_club";
+        var data = new FormData(e.target);
+        fetch(url, { method: 'POST', body: data })
+            .then(response => response.ok ? response.json() : response.json().then(error => { throw error; }))
+            .then(data => { handleEventRegSuccess(data); })
+            .catch((error) => { console.error('Error:', error); console.error('data:', data); handleEventRegError(error); });
+        // offLoading();
+    });
+</script>
+<!-- include footer -->
+{% include footer.html %}
